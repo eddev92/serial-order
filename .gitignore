@@ -5,3 +5,9 @@ bower_components
 
 # npm
 npm-debug.log
+
+# Modulos 'app/core/modules'
+oclazyload.component.js
+oclazyload.flow.js
+oclazyload.partial.js
+oclazyload.view.js
