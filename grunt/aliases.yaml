@@ -1,0 +1,8 @@
+# Registro de tareas a ejecutar con grunt ( connect )
+
+# Tarea por default
+default:
+  - 'connect'
+ 
+
+
