@@ -7,18 +7,16 @@
 
 <div class="login-page">
   <div class="form">
-    <form class="register-form">
-      <input type="text" placeholder="name"/>
-      <input type="password" placeholder="password"/>
-      <input type="text" placeholder="email address"/>
-      <button>create</button>
-
-    </form>
-    <form class="login-form">
-  	 <label>Ingrese un número:</label>
-   		 <input type="number" name="num" ng-model="homeVM.num" required>
-      		<button data-ng-click="homeVM.order()">Ordenar</button>
-         
+  
+    <form class="login-form" name="putNumber" role="formSearchRuc">
+     <md-input-container>
+	  	 <label>Ingrese un número:</label>
+	   		 <input type="number" name="num" md-maxlength="10" ng-pattern="/^[0-9]{1,100}$/" ng-model="homeVM.num" required>
+	   		 <div ng-messages="putNumber.num.$error">
+	   		   	<div ng-message="md-maxlength" class="my-message">Debe tener 10 caracteres como maximo</div>
+	   		   </div>
+	      		<button data-ng-click="homeVM.order()">Ordenar</button>    
+	  </md-input-container>    
     </form>
   </div>
 </div>

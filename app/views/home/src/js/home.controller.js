@@ -44,19 +44,28 @@
 		/** 
 		 * @function 
 		 * @name order()
-     	 * @desc ordena el numero ingresado en el formulario
+     	 * @desc ordena y valida la cantidad maxima del numero ingresado en el formulario
      	 * @memberOf Flows
       	 */
     	
     	var num = vm.num;
 
-    	function order(){
+    	function order(num){
+
     		
     		num = vm.num;
 
-    		console.log(num)
+    		if(num >= 0 && num < 9999999999){
+
+    		console.log("el numero existe")    
+
+    		}
+    		else{
+    			console.log("Existe un numero repetido")
     		
-    		
+    		}
+    		// alert(num);
+    	
     	}
 
 		/** 
