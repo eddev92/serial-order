@@ -2,7 +2,11 @@
 
 # Tarea por default
 default:
+  - 'environment:LOCAL'
   - 'connect'
- 
+  - 'watch'
 
+ 
+release:
+  - 'ocLazyLoad'
 
