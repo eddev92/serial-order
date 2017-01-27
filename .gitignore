@@ -1,0 +1,7 @@
+#Ignorar Node & Bower
+###########################
+node_modules
+bower_components
+
+# npm
+npm-debug.log
