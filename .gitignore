@@ -11,3 +11,6 @@ oclazyload.component.js
 oclazyload.flow.js
 oclazyload.partial.js
 oclazyload.view.js
+
+# Constants autogenerado
+constants.environment.js

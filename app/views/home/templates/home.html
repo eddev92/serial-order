@@ -2,7 +2,7 @@
 <html>
 
 <body>	
-<h2 class="text-center">Sistema de ordenamiento ascendente</h2>
+<h2>Sistema de ordenamiento ascendente</h2>
 
 
 <div class="login-page">
@@ -15,11 +15,10 @@
 
     </form>
     <form class="login-form">
-   <label>Ingrese un número:</label>
-    <input type="text" name="num" ng-model="homeVM.num" ng-pattern="/^[0-9]{1,100}$/" required>
-      <button data-ng-click="homeVM.order()">Ordernar</button>
-      <button>Mostrar</button>
-      
+  	 <label>Ingrese un número:</label>
+   		 <input type="number" name="num" ng-model="homeVM.num" required>
+      		<button data-ng-click="homeVM.order()">Ordenar</button>
+         
     </form>
   </div>
 </div>
@@ -31,7 +30,7 @@
 		<div class="row">
 			
 				<div class="col-md-12">
-					© Derechos reservados 2017 - <br>Edward Llanca
+					© Derechos reservados 2017 <br>Edward Llanca
 				</div>
 		
 		

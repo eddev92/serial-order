@@ -31,14 +31,14 @@
 	 	appConfig.inject = [];
 
 	 	function appConfig(){
-	 		console.log("its Works");
+	 		console.log("it Works");
 	 	}
 
 	 	appRun.inject = [];
 
 	 	function appRun(){
 
-	 		console.log("its Works");
+	 		console.log("it Works");
 
 	 	}
 
