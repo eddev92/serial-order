@@ -21,6 +21,7 @@
 	 	.module('ordenador', [	
 	 			'module.third.parties', 			
 	 			'module.core',
+	 			'module.views',
 	 			'routes',
 	 			])
 

@@ -1,7 +1,7 @@
 /**
  * ModulesCore Core
  * @namespace Core
- * @author Edward Llanca Haro (ellancah@everis.com)
+ * @author Edward Llanca Haro (edwarllanca@hotmail.com)
  */
 
  (function(angular) {
@@ -10,10 +10,7 @@
  	angular
  		.module('module.core', [
 			'core.constants',
-			//'oclazyload.flow',
-			//'oclazyload.component',
-			// 'oclazyload.partial',
-			//'ocLazyLoad.view'			
+			'ocLazyLoad.view'			
  		]);
 
  }(angular));

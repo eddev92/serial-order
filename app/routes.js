@@ -28,7 +28,9 @@
 		$stateProvider
 		.state('home', {
 			url:constantsValues.PATH_HOME,
-			templateUrl: 'views/home/templates/home.html'
+			templateUrl: 'views/home/templates/home.html',
+			controller: 'homeController',
+			controllerAs: 'homeVM'
 	
 		})
 

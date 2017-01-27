@@ -13,11 +13,9 @@
 			// debug: true,
 			serie: true,
 			modules: [
-				{name: 'view.login', files: [
-					'views/home/src/js/login.controller.js',
-					'views/home/src/js/login.directive.js',
-					'views/home/src/js/login.service.js',
-					'views/home/src/login.module.js'
+				{name: 'view.home', files: [
+					'views/home/src/js/home.controller.js',
+					'views/home/src/home.module.js'
 				], serie: true}
 				
 			]

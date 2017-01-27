@@ -9,7 +9,7 @@
 
 	var URL_HOST = window.location.protocol + '//' + window.location.hostname + ':',
 		APP_MOCK = true,
-		PORT = 9002;
+		PORT = 9000;
 
 
  'use strict';

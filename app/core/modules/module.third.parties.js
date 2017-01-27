@@ -1,7 +1,7 @@
 /**
  * ModulesThirdParties Core
  * @namespace Core
- * @author Edward Llanca Haro (ellancah@everis.com)
+ * @author Edward Llanca Haro (edwarllanca@hotmail.com)
  */
 
   (function(angular) {
