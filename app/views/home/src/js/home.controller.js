@@ -44,7 +44,7 @@
 		/** 
 		 * @function 
 		 * @name order()
-     	 * @desc ordena y valida la cantidad maxima del numero ingresado en el formulario
+     	 * @desc ordena formulario
      	 * @memberOf Flows
       	 */
     	
@@ -57,17 +57,27 @@
     	
     	}
 
+
+    	/** 
+		 * @function 
+		 * @name KeyCode()
+     	 * @desc valida la cantidad de press del teclado numerico
+     	 * @memberOf Flows
+      	 */
+
     	var keys = []
 
     	function KeyCode($event) {
 
-    	 	if($event.keyCode === 8) {// DELETE
+    		/* evalua al eliminar números */
+    	 	if($event.keyCode === 8) {
     	 		keys.splice(keys.length -1, 1);
     	 	} else {
-
+    	 		/* evalua si fue presionado una vez */
 	    	 	if(keys.indexOf($event.key) === -1) {
 	    	 		keys.push($event.key);
 	    	 	} else {
+	    	 		/* setea ultimo arreglo correcto sin la tecla presionada */
 	    	 		$timeout(function() {
 	    	 			vm.num = Number(keys.join(''));
 	    	 		})
