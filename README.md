@@ -6,4 +6,5 @@ Desafio Analista Front-end4
  - npm install
  - npm install -g bower
  - bower install
+ - grunt release ( tarea lazyload module view )
  - grunt ( correr app )
