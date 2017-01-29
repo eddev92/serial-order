@@ -48,25 +48,34 @@
      	 * @memberOf Flows
       	 */
     	
-    	var num = vm.num;
+    	var num = vm.num;    
 
-    	function order(num){
 
+    	function order(num, $event){
     		
-    		num = vm.num;
-
-    		if(num >= 0 && num < 9999999999){
-
-    		console.log("el numero existe")    
-
-    		}
-    		else{
-    			console.log("Existe un numero repetido")
-    		
-    		}
-    		// alert(num);
+			vm.num = Number(keys.sort().join(''));
     	
     	}
+
+    	var keys = []
+
+    	function KeyCode($event) {
+
+    	 	if($event.keyCode === 8) {// DELETE
+    	 		keys.splice(keys.length -1, 1);
+    	 	} else {
+
+	    	 	if(keys.indexOf($event.key) === -1) {
+	    	 		keys.push($event.key);
+	    	 	} else {
+	    	 		$timeout(function() {
+	    	 			vm.num = Number(keys.join(''));
+	    	 		})
+	    	 	}
+    	 	}
+			       
+    	};		
+  
 
 		/** 
 		 * @function 
@@ -78,6 +87,7 @@
 		function initStates(){
 			vm.order = order;
 			vm.num = num;
+			vm.KeyCode = KeyCode;
 			
 		}
 
