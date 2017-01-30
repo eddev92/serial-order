@@ -1,5 +1,5 @@
 # serial-order
-Desafio Analista Front-end4
+Desafio Analista Front-end
 
 1. Instalar NodeJS ( https://nodejs.org/es/download/ )
 2. abrir consola, ingresar los comandos en este orden:
